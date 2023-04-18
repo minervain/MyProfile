@@ -1,0 +1,100 @@
+/* Annimations are defined before hand here used both in mobile and desktop view of the
+webpage, they are also shared between this and the other pages*/
+/*
+index.html webpage animations
+*/
+@keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+  /*Animation for pulsing icon of me flshing to get users attention to press me for naivgation*/
+  @keyframes furqaniconflash {
+    from, 50%, to {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0.7;
+    }
+  }
+  
+  /*Animation for cheveron pulsing up and down located on about and work page*/
+  @keyframes pulseicon {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  /*
+  Fade in animation of bracket text enter button
+  */
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /*
+  Fade in down animation for the eneter button located on the preloder of the index page.
+  */
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInRight{
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  /*
+  Animations used across the website for a multi-color gradient backgoound
+  the animation specifies the position of the gradient at diffrent percentiles
+  to give the effect that the background size is always resizing (animation needs to be in infinite)
+  */
+  @keyframes desktopgradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  
+  @keyframes desktoppreloaderbackground {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
